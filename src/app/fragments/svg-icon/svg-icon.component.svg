@@ -1,0 +1,27 @@
+<svg
+  viewBox="0 0 24 24"
+  [attr.fill]="fill"
+  [attr.width]="width"
+  [attr.height]="height"
+  [class]="svgClass"
+>
+  <ng-container [ngSwitch]="type">
+    <ng-container *ngSwitchCase="SvgIcon.ARROW_RIGHT">
+      <g>
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path d="M16 12l-6 6V6z"/>
+      </g>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="SvgIcon.ARROW_DOWN">
+      <g>
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path d="M12 16l-6-6h12z"/>
+      </g>
+    </ng-container>
+  </ng-container>
+</svg>
+
+
+
+
